@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sparta Group — website edukasi cryptocurrency, trading, analisis pasar, dan manajemen risiko.">
+  <title>Sparta Group</title>
+  <style>
+    :root{--bg:#050505;--panel:#111111;--panel2:#191919;--gold:#ffffff;--gold2:#eeeeee;--text:#ffffff;--muted:#bdbdbd;--line:#333333}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:900;letter-spacing:1px;color:#ffffff;font-size:1.05rem}.brand span{display:block;color:var(--muted);font-size:.65rem;letter-spacing:3px}
+    .links{display:flex;gap:22px;align-items:center;font-size:.9rem;color:var(--muted)}.links a:hover{color:#ffffff}
+    .menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:8px;padding:8px 12px}
+    .hero{padding:86px 0 74px;background:radial-gradient(ellipse at 80% 20%,#222 0,transparent 42%),linear-gradient(135deg,#000,#090909)}
+    .eyebrow{color:#ffffff;font-weight:800;letter-spacing:3px;font-size:.75rem}
+    h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.04;max-width:800px;margin:18px 0}
+    h1 em{font-style:normal;color:#ffffff}.lead{max-width:650px;color:var(--muted);font-size:1.08rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:12px 20px;border-radius:9px;font-weight:800;background:var(--gold);color:#000000}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid #53647a}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px;max-width:760px}
+    .stat{padding:18px;background:rgba(16,30,49,.8);border:1px solid var(--line);border-radius:12px}.stat b{display:block;color:#ffffff;font-size:1.1rem}.stat small{color:var(--muted)}
+    section{padding:72px 0}.section-label{color:#ffffff;font-weight:800;letter-spacing:2px;font-size:.72rem}
+    h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:10px 0 14px}.intro{max-width:680px;color:var(--muted);margin-bottom:30px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:24px}
+    .icon{font-size:1.8rem}.card h3{margin:12px 0 8px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .quote{background:linear-gradient(145deg,#181818,#080808);border:1px solid var(--line);border-radius:18px;padding:30px}
+    .quote strong{font-size:1.3rem;color:#eeeeee}
+    .steps{counter-reset:item}.step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+    .number{flex:0 0 38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#263750;color:#ffffff;font-weight:900}
+    .step p{margin:4px 0 0;color:var(--muted)}
+    .notice{background:#211d14;border:1px solid #6b552b;border-radius:12px;padding:18px;color:#e9d9b4}
+    .references a{color:#eeeeee;text-decoration:underline;text-underline-offset:3px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem}
+    @media(max-width:760px){.links{display:none;position:absolute;top:72px;left:0;right:0;background:#080808;padding:20px 4%;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero{padding:65px 0 55px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#home">SPARTA GROUP<span>CRYPTO EDUCATION</span></a>
+      <button class="menu" id="menuBtn" aria-label="Buka menu">☰</button>
+      <div class="links" id="navLinks">
+        <a href="#home">Beranda</a><a href="#tentang">Tentang</a><a href="#materi">Materi</a><a href="#risiko">Manajemen Risiko</a><a href="#referensi">Referensi</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="eyebrow">EDUKASI ASET DIGITAL</div>
+      <h1>SPARTA <em>GROUP</em></h1>
+      <p class="lead">Belajar memahami cryptocurrency, membaca pergerakan pasar, dan mengenali risiko aset digital. Mulai dari dasar, pelajari dengan bijak.</p>
+      <div class="actions"><a class="btn" href="#materi">Mulai Belajar</a><a class="btn secondary" href="#tentang">Kenali Website</a></div>
+      <div class="stats">
+        <div class="stat"><b>Crypto 101</b><small>Kenali aset digital</small></div>
+        <div class="stat"><b>Market Insight</b><small>Pahami pasar dan analisis</small></div>
+        <div class="stat"><b>Risk First</b><small>Dahulukan pengelolaan risiko</small></div>
+      </div>
+    </div>
+  </section>
+  <section id="tentang">
+    <div class="wrap about">
+      <div><div class="section-label">TENTANG WEBSITE</div><h2>Belajar crypto dengan pengetahuan, bukan sekadar spekulasi.</h2>
+        <p class="intro">Sparta Group merupakan website edukasi yang disusun untuk membantu pengunjung mengenal cryptocurrency dan konsep dasar perdagangan aset digital.</p>
+        <p class="intro">Materi di dalamnya mencakup teknologi blockchain, jenis transaksi, analisis pasar, serta pentingnya keamanan dan manajemen risiko.</p>
+      </div>
+      <div class="quote"><strong>“Pahami asetnya. Pelajari risikonya. Jangan terburu-buru mengambil keputusan.”</strong><p style="color:var(--muted);margin-bottom:0">Prinsip belajar di Sparta Group.</p></div>
+    </div>
+  </section>
+  <section id="materi" style="background:#080808">
+    <div class="wrap">
+      <div class="section-label">PUSAT PEMBELAJARAN</div><h2>Materi yang bisa kamu pelajari</h2>
+      <p class="intro">Mulai dari pengenalan dasar hingga memahami cara kerja pasar aset digital.</p>
+      <div class="grid">
+        <article class="card"><div class="icon">₿</div><h3>Dasar Cryptocurrency</h3><p>Mengenal aset digital, Bitcoin, altcoin, dompet digital, dan istilah penting dalam ekosistem crypto.</p></article>
+        <article class="card"><div class="icon">⛓</div><h3>Blockchain</h3><p>Memahami konsep blockchain, transaksi terdesentralisasi, jaringan, dan fungsi smart contract.</p></article>
+        <article class="card"><div class="icon">📊</div><h3>Dasar Trading</h3><p>Mengenal pasar, pasangan perdagangan, order, candlestick, serta perbedaan spot dan futures.</p></article>
+        <article class="card"><div class="icon">📈</div><h3>Analisis Pasar</h3><p>Pengantar analisis teknikal dan fundamental untuk membaca informasi pasar secara kritis.</p></article>
+        <article class="card"><div class="icon">🛡️</div><h3>Manajemen Risiko</h3><p>Mempelajari pengelolaan modal, batas kerugian, diversifikasi, dan risiko volatilitas.</p></article>
+        <article class="card"><div class="icon">🔐</div><h3>Keamanan Digital</h3><p>Mengenali risiko penipuan, phishing, keamanan akun, dan pentingnya menjaga seed phrase.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="risiko">
+    <div class="wrap">
+      <div class="section-label">BELAJAR SECARA BIJAK</div><h2>Utamakan keamanan dan manajemen risiko</h2>
+      <p class="intro">Harga cryptocurrency dapat berubah dengan sangat cepat. Memahami risiko merupakan bagian penting dari literasi aset digital.</p>
+      <div class="steps">
+        <div class="step"><div class="number">1</div><div><b>Pelajari sebelum menggunakan</b><p>Pahami cara kerja aset, platform, biaya, dan ketentuan transaksi.</p></div></div>
+        <div class="step"><div class="number">2</div><div><b>Kenali toleransi risiko</b><p>Jangan menggunakan dana kebutuhan pokok atau dana pinjaman untuk aktivitas spekulatif.</p></div></div>
+        <div class="step"><div class="number">3</div><div><b>Jaga keamanan akun</b><p>Gunakan kata sandi kuat, autentikasi dua faktor, dan jangan membagikan kode rahasia.</p></div></div>
+        <div class="step"><div class="number">4</div><div><b>Waspadai janji keuntungan</b><p>Hindari pihak yang menjanjikan keuntungan pasti atau meminta transfer dengan tekanan.</p></div></div>
+      </div>
+      <div class="notice" style="margin-top:25px"><b>Perhatian:</b> Cryptocurrency memiliki risiko kehilangan modal. Materi website ini bersifat edukatif, bukan nasihat keuangan maupun ajakan membeli atau menjual aset tertentu.</div>
+    </div>
+  </section>
+  <section id="referensi" style="background:#080808">
+    <div class="wrap">
+      <div class="section-label">SUMBER BELAJAR</div><h2>Referensi dan bacaan lanjutan</h2>
+      <p class="intro">Gunakan sumber tepercaya untuk memperdalam pemahaman. Periksa tanggal, konteks, dan kredibilitas setiap informasi.</p>
+      <div class="card references">
+        <p><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Bitcoin: A Peer-to-Peer Electronic Cash System — Satoshi Nakamoto</a></p>
+        <p><a href="https://ethereum.org/en/learn/" target="_blank" rel="noopener">Ethereum.org — Learn</a></p>
+        <p><a href="https://www.bappebti.go.id/" target="_blank" rel="noopener">Bappebti — Informasi perdagangan berjangka dan aset kripto</a></p>
+        <p><a href="https://www.ojk.go.id/" target="_blank" rel="noopener">Otoritas Jasa Keuangan (OJK) — Informasi dan edukasi keuangan</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Sparta Group. Dibuat untuk tujuan edukasi.</div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
+</html>
